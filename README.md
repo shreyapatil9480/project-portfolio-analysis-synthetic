@@ -57,9 +57,36 @@ The synthetic dataset simulates real-world project portfolios. Columns include:
 
 This project is intended to enhance your portfolio by demonstrating your ability to:
 
+
 - Generate and work with structured datasets.
 - Perform exploratory data analysis and create meaningful visualizations.
 - Build and evaluate predictive models using scikit-learn.
 - Document your work clearly and comprehensively in a README and notebook.
 
 Feel free to build on this project by adding new models, interactive dashboards (e.g., using Plotly or Dash), or deeper analyses (such as time-series forecasting or clustering).
+## Usage
+
+Follow these steps to run and extend the project:
+
+1. **Environment setup**: Ensure you have Python (>=3.8) and pip installed. Using a virtual environment is recommended.
+2. **Install dependencies**: From the repository root, run:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Launch the notebook**: Open the Jupyter notebook by running:
+
+   ```bash
+   jupyter notebook analysis_notebook.ipynb
+   ```
+
+   Then follow the cells sequentially. The notebook will automatically load the synthetic dataset from `project_portfolio_dataset.csv`.
+
+4. **Explore and modify**: Add new exploratory plots or test alternative models. Use the EDA section as a starting point for additional visualizations and insights.
+
+5. **Regenerate data (optional)**: The synthetic data is created within the notebook. To generate a new dataset with different characteristics, edit the data generation code near the top of `analysis_notebook.ipynb` and rerun the cells to produce a new CSV.
+
+6. **Extend the models**: The predictive modeling section uses a logistic regression classifier. Feel free to experiment with other algorithms (e.g., decision trees, random forests, gradient boosting) by replacing the model in the notebook.
+
+This repository is designed to be a complete, out‑of‑the‑box example for demonstrating data analysis and predictive modeling skills in a project management context. Contributions and improvements—such as adding interactive dashboards or more sophisticated machine learning techniques—are welcome.
